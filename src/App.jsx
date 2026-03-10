@@ -115,23 +115,11 @@ function App() {
           </div>
         </section>
 
-        {/* Synopsis */}
-        <section className="section synopsis-section">
-          <div className="section-inner">
-            <p className="section-label">The Film</p>
-            <h2>Synopsis</h2>
-            <p className="synopsis-text">
-              Highschool senior seeks to make a summer fling last in an
-              unexpected way.
-            </p>
-          </div>
-        </section>
-
         {/* Roles */}
         <section className="section roles-section">
           <div className="section-inner">
             <p className="section-label">Open Roles</p>
-            <h2>Characters</h2>
+            <h2>Available Roles</h2>
             <div className="roles-grid">
               {roles.map((role) => (
                 <div key={role.name} className="role-card">
