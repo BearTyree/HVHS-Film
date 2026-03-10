@@ -59,40 +59,14 @@
   gap: 1.5rem;
 }
 
-.hero-synopsis-block {
-  width: min(100%, 420px);
-  margin: 0 auto;
-  padding: 1rem 1.1rem 0;
-  text-align: left;
-}
-
-.hero-synopsis-label {
-  font-family: system-ui, sans-serif;
-  font-size: 0.65rem;
-  font-weight: 700;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: #c8a96e;
-  margin-bottom: 0.4rem;
-}
-
-.hero-synopsis {
-  max-width: 40ch;
-  font-size: 1rem;
-  font-style: italic;
-  line-height: 1.65;
-  color: #b8b0a4;
-  text-align: left;
-}
-
 .hero-label {
   font-family: system-ui, sans-serif;
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.2em;
+  font-size: 1.45rem;
+  font-weight: 800;
+  letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: #c8a96e;
-  margin-bottom: 1.25rem;
+  color: #efc978;
+  margin-bottom: 0.85rem;
 }
 
 .hero-title {
@@ -105,12 +79,23 @@
   margin-bottom: 1rem;
 }
 
-.hero-subtitle {
+.hero-kicker {
   font-family: system-ui, sans-serif;
   font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
   color: #8a8070;
-  letter-spacing: 0.08em;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.9rem;
+}
+
+.hero-subtitle {
+  max-width: 34rem;
+  font-size: 1.2rem;
+  font-style: italic;
+  line-height: 1.65;
+  color: #b8b0a4;
+  margin-bottom: 0;
 }
 
 .hero-meta {
@@ -144,12 +129,12 @@
 
 .hero-audition-label {
   font-family: system-ui, sans-serif;
-  font-size: 0.65rem;
-  font-weight: 700;
-  letter-spacing: 0.25em;
+  font-size: 1.38rem;
+  font-weight: 800;
+  letter-spacing: 0.34em;
   text-transform: uppercase;
-  color: #c8a96e;
-  margin-bottom: 0.5rem;
+  color: #efc978;
+  margin-bottom: 0.95rem;
 }
 
 .hero-audition-dates {
@@ -506,7 +491,6 @@
     gap: 1.4rem;
   }
 
-  .hero-synopsis-block,
   .hero-audition,
   .cta-btn {
     max-width: 520px;
@@ -537,18 +521,14 @@
   }
 
   .hero-subtitle {
-    font-size: 0.82rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .hero-synopsis {
     font-size: 0.95rem;
     line-height: 1.55;
+    margin-bottom: 0;
   }
 
-  .hero-synopsis-block {
-    margin-top: 0.1rem;
-    padding: 0 0.2rem;
+  .hero-kicker {
+    font-size: 0.78rem;
+    margin-bottom: 0.7rem;
   }
 
   .hero-audition {

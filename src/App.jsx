@@ -50,17 +50,14 @@ function App() {
         <div className="hero-left">
           <p className="hero-label">Casting Call · 2026</p>
           <h1 className="hero-title">Virtual Butterflies</h1>
-          <p className="hero-subtitle">A short film</p>
+          <p className="hero-kicker">A short film</p>
+          <p className="hero-subtitle">
+            Highschool senior seeks to make a summer fling last in an unexpected
+            way.
+          </p>
         </div>
         <div className="hero-divider" />
         <div className="hero-right">
-          <div className="hero-synopsis-block">
-            <p className="hero-synopsis-label">Synopsis</p>
-            <p className="hero-synopsis">
-              Highschool senior seeks to make a summer fling last in an
-              unexpected way.
-            </p>
-          </div>
           <div className="hero-audition">
             <p className="hero-audition-label">Auditions</p>
             <p className="hero-audition-dates">March 14</p>
