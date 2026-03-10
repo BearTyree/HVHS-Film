@@ -1,9 +1,15 @@
 /* ── Reset & base ────────────────────────────────── */
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 .page {
   min-height: 100vh;
-  font-family: 'Georgia', 'Times New Roman', serif;
+  font-family: "Georgia", "Times New Roman", serif;
   background: #0d0d0f;
   color: #e8e4dc;
 }
@@ -33,7 +39,13 @@
 .hero-divider {
   width: 1px;
   align-self: stretch;
-  background: linear-gradient(to bottom, transparent, #2a2a30 20%, #2a2a30 80%, transparent);
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    #2a2a30 20%,
+    #2a2a30 80%,
+    transparent
+  );
   flex-shrink: 0;
 }
 
@@ -45,6 +57,31 @@
   align-items: center;
   padding-left: 4vw;
   gap: 1.75rem;
+}
+
+.hero-synopsis-block {
+  width: 100%;
+  max-width: 360px;
+  text-align: left;
+}
+
+.hero-synopsis-label {
+  font-family: system-ui, sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #c8a96e;
+  margin-bottom: 0.4rem;
+}
+
+.hero-synopsis {
+  max-width: 360px;
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 1.6;
+  color: #b8b0a4;
+  text-align: left;
 }
 
 .hero-label {
@@ -140,17 +177,25 @@
 
 /* ── CTA Button ───────────────────────────────────── */
 .cta-btn {
-  display: inline-block;
-  padding: 0.85rem 2.2rem;
-  border: 1px solid #c8a96e;
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  padding: 0.9rem 1.4rem;
+  align-self: center;
+  border: none;
   color: #c8a96e;
+  background: rgba(200, 169, 110, 0.1);
   font-family: system-ui, sans-serif;
   font-size: 0.85rem;
   font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  text-transform: none;
   text-decoration: none;
-  transition: background 0.25s, color 0.25s;
+  text-align: left;
+  padding-left: 1.9rem;
+  transition:
+    background 0.25s,
+    color 0.25s;
   border-radius: 2px;
 }
 .cta-btn:hover {
@@ -284,7 +329,8 @@
   padding-top: 0.1rem;
 }
 
-.sched-day, .sched-month {
+.sched-day,
+.sched-month {
   font-family: system-ui, sans-serif;
   font-size: 0.6rem;
   font-weight: 700;
@@ -402,4 +448,112 @@
   font-size: 0.75rem;
   color: #3a3830;
   letter-spacing: 0.06em;
+}
+
+@media (max-width: 980px) {
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3.5rem 1.25rem;
+  }
+
+  .hero-left {
+    align-items: center;
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .hero-divider {
+    display: none;
+  }
+
+  .hero-right {
+    width: 100%;
+    padding-left: 0;
+    gap: 1.25rem;
+  }
+
+  .hero-synopsis-block,
+  .hero-audition,
+  .cta-btn {
+    max-width: 520px;
+  }
+
+  .roles-grid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    min-height: auto;
+    padding: 3rem 1rem;
+    gap: 2.5rem;
+  }
+
+  .hero-left {
+    gap: 0.6rem;
+  }
+
+  .hero-right {
+    gap: 1.75rem;
+  }
+
+  .hero-title {
+    font-size: clamp(2.2rem, 12vw, 3.6rem);
+  }
+
+  .hero-subtitle {
+    font-size: 0.82rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-synopsis {
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
+
+  .hero-synopsis-block {
+    margin-top: 0.25rem;
+  }
+
+  .hero-audition {
+    padding: 1.15rem 1.25rem;
+    margin-top: 0.1rem;
+  }
+
+  .hero-audition-dates {
+    font-size: clamp(1.5rem, 8vw, 2rem);
+  }
+
+  .hero-audition-time {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+
+  .cta-btn {
+    font-size: 0.82rem;
+    padding: 0.82rem 1rem;
+    padding-left: 1rem;
+    margin-top: 0.2rem;
+  }
+
+  .section {
+    padding: 3.75rem 1rem;
+  }
+
+  .details-grid {
+    grid-template-columns: 1fr;
+    padding: 3rem 1rem;
+  }
+
+  .roles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-card,
+  .role-card {
+    padding: 1.25rem;
+  }
 }
