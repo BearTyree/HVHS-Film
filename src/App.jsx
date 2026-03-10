@@ -66,7 +66,9 @@ function App() {
             <p className="hero-audition-dates">March 14</p>
             <p className="hero-audition-time">1:00 pm – 3:00 pm</p>
             <p className="hero-audition-location">
-              <span className="hero-location-name">Melrose Library, Roanoke</span>
+              <span className="hero-location-name">
+                Melrose Library, Roanoke
+              </span>
               2502 Melrose Ave NW Suite D
               <br />
               Roanoke, VA 24017
@@ -87,7 +89,9 @@ function App() {
             <p>March 14, 2026</p>
             <p className="detail-sub">1 pm – 3 pm</p>
             <p className="detail-location-block">
-              <span className="detail-location-name">Melrose Library, Roanoke</span>
+              <span className="detail-location-name">
+                Melrose Library, Roanoke
+              </span>
               2502 Melrose Ave NW Suite D
               <br />
               Roanoke, VA 24017
