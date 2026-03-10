@@ -54,14 +54,15 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   padding-left: 4vw;
-  gap: 1.75rem;
+  gap: 1.5rem;
 }
 
 .hero-synopsis-block {
-  width: 100%;
-  max-width: 360px;
+  width: min(100%, 420px);
+  margin: 0 auto;
+  padding: 1rem 1.1rem 0;
   text-align: left;
 }
 
@@ -76,10 +77,10 @@
 }
 
 .hero-synopsis {
-  max-width: 360px;
+  max-width: 40ch;
   font-size: 1rem;
   font-style: italic;
-  line-height: 1.6;
+  line-height: 1.65;
   color: #b8b0a4;
   text-align: left;
 }
@@ -131,12 +132,13 @@
 
 .hero-audition {
   margin: 0;
-  padding: 1.5rem 2.5rem;
+  padding: 1.4rem 1.4rem 1.2rem;
   border: 1px solid #c8a96e44;
   border-radius: 4px;
   background: rgba(200, 169, 110, 0.04);
   width: 100%;
-  max-width: 360px;
+  max-width: 420px;
+  margin-inline: auto;
   text-align: center;
 }
 
@@ -170,29 +172,40 @@
 
 .hero-audition-location {
   font-family: system-ui, sans-serif;
-  font-size: 0.75rem;
+  font-size: 0.83rem;
   color: #5a5550;
-  letter-spacing: 0.06em;
+  line-height: 1.55;
+  letter-spacing: 0.015em;
+  text-align: center;
+  margin-top: 0.8rem;
+}
+
+.hero-location-name {
+  display: block;
+  font-size: 1.06rem;
+  font-weight: 700;
+  color: #d4cfc7;
+  letter-spacing: 0.015em;
+  margin-bottom: 0.08rem;
 }
 
 /* ── CTA Button ───────────────────────────────────── */
 .cta-btn {
   display: block;
   width: 100%;
-  max-width: 360px;
-  padding: 0.9rem 1.4rem;
-  align-self: center;
+  max-width: 420px;
+  padding: 0.95rem 1.2rem;
+  margin-inline: auto;
   border: none;
   color: #c8a96e;
   background: rgba(200, 169, 110, 0.1);
   font-family: system-ui, sans-serif;
-  font-size: 0.85rem;
+  font-size: 0.92rem;
   font-weight: 600;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
   text-transform: none;
   text-decoration: none;
-  text-align: left;
-  padding-left: 1.9rem;
+  text-align: center;
   transition:
     background 0.25s,
     color 0.25s;
@@ -284,6 +297,25 @@
   font-size: 0.85rem !important;
   color: #6a6560 !important;
   margin-top: 0.25rem;
+}
+
+.detail-location-block {
+  font-family: system-ui, sans-serif;
+  font-size: 0.78rem !important;
+  color: #7f776d !important;
+  line-height: 1.55;
+  letter-spacing: 0.02em;
+  margin-top: 0.9rem;
+  text-align: left;
+}
+
+.detail-location-name {
+  display: block;
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: #d4cfc7;
+  letter-spacing: 0.01em;
+  margin-bottom: 0.06rem;
 }
 
 /* ── Synopsis ─────────────────────────────────────── */
@@ -471,7 +503,7 @@
   .hero-right {
     width: 100%;
     padding-left: 0;
-    gap: 1.25rem;
+    gap: 1.4rem;
   }
 
   .hero-synopsis-block,
@@ -497,7 +529,7 @@
   }
 
   .hero-right {
-    gap: 1.75rem;
+    gap: 1.45rem;
   }
 
   .hero-title {
@@ -515,12 +547,13 @@
   }
 
   .hero-synopsis-block {
-    margin-top: 0.25rem;
+    margin-top: 0.1rem;
+    padding: 0 0.2rem;
   }
 
   .hero-audition {
-    padding: 1.15rem 1.25rem;
-    margin-top: 0.1rem;
+    padding: 1.1rem 1rem;
+    margin-top: 0;
   }
 
   .hero-audition-dates {
@@ -533,10 +566,9 @@
   }
 
   .cta-btn {
-    font-size: 0.82rem;
-    padding: 0.82rem 1rem;
-    padding-left: 1rem;
-    margin-top: 0.2rem;
+    font-size: 0.85rem;
+    padding: 0.85rem 0.9rem;
+    margin-top: 0;
   }
 
   .section {
